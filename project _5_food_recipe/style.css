@@ -1,0 +1,55 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+/* button{
+    font-weight: bold !important;
+} */
+
+.text-input{
+    margin: 2rem;
+}
+
+.text-input input{
+    width: 20rem;
+    background-color: rgb(74, 74, 74);
+    border: none;
+    border-radius: 3px;
+    color: whitesmoke;
+    padding: 4px;
+}
+input:focus{
+    outline: none;
+}
+
+.food{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem;
+
+}
+.food-container{
+    text-align: center;
+}
+
+.meal-item{
+    width: 200px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+.food-name{
+    margin: 10px;
+}

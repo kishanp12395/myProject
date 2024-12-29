@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click The Color Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Click the Color Game</h1>
+        <p>Target Color : <span id="targetColor">Red</span></p>
+        <p>Score : <span id="score">0</span> | Time Left : <span id="timer">2:00</span></p>
+        <div id="gameGrid">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- overlays -->
+         <div id="congratsOverlay" class="overlay">
+            Congratulations! You Win !
+
+            <button id="restartGameOverlay" class="overlay-button">Restart Game</button>
+         </div>
+
+
+         <div id="loseOverlay" class="overlay lose-overlay">
+            You Lose!  Time Up !
+
+            <button id="restartGameOverlayLose" class="overlay-button">Restart Game</button>
+         </div>
+
+         <!-- audio -->
+          <!-- background music -->
+          <audio id="backgroundMusic" >
+            <source src="./music/background_music.mp3" type="audio/mpeg">
+          </audio>
+
+            <!-- win music -->
+          <audio id="winMusic">
+            <source src="./music/win.mp3" type="audio/mpeg">
+          </audio>
+
+            <!-- lose music -->
+          <audio id="loseMusic">
+            <source src="./music/you-lose-game-sound.mp3" type="audio/mpeg">
+          </audio>
+
+            <!-- correct music -->
+          <audio id="correctMusic">
+            <source src="./music/correct.mp3" type="audio/mpeg">
+          </audio>
+            <!-- incorrect music -->
+          <audio id="incorrectMusic">
+            <source src="./music/wrong-answer.mp3" type="audio/mpeg">
+          </audio>
+    </div>
+</body>
+</html>
